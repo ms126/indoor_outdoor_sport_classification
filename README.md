@@ -1,2 +1,2 @@
-# cnn_sport_classification
+# CNN Sport Classification
 Sport image classification
