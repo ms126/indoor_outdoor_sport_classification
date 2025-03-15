@@ -8,7 +8,6 @@ The dataset consists of images of athletes participating in various sports, cate
 ![image](https://github.com/user-attachments/assets/2073b744-dbce-4729-8d94-5bd25c321a82)
 
 ## Methods Overview:
-### **Methods Overview**:
 
 The project uses a Convolutional Neural Network (CNN) to classify images of athletes participating in various sports into two categories: indoor and outdoor. The following steps outline the method used:
 
