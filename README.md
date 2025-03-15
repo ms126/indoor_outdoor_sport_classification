@@ -28,16 +28,16 @@ The project uses a Convolutional Neural Network (CNN) to classify images of athl
    - After training, the model is evaluated on a test set that was not seen during training. The final classification accuracy and loss on the test set are reported.
 
 ## Results:
-Epoch [1/10], Train Loss: 0.4692, Train Acc: 78.64%, Valid Loss: 0.4257, Valid Acc: 79.20%
-Epoch [2/10], Train Loss: 0.4256, Train Acc: 81.00%, Valid Loss: 0.3984, Valid Acc: 79.80%
-Epoch [3/10], Train Loss: 0.3524, Train Acc: 84.92%, Valid Loss: 0.3558, Valid Acc: 84.80%
-Epoch [4/10], Train Loss: 0.2616, Train Acc: 89.38%, Valid Loss: 0.5081, Valid Acc: 84.20%
-Epoch [5/10], Train Loss: 0.1557, Train Acc: 94.20%, Valid Loss: 0.5929, Valid Acc: 84.80%
-Epoch [6/10], Train Loss: 0.0853, Train Acc: 96.90%, Valid Loss: 0.6017, Valid Acc: 83.80%
-Epoch [7/10], Train Loss: 0.0530, Train Acc: 98.30%, Valid Loss: 0.8172, Valid Acc: 85.40%
-Epoch [8/10], Train Loss: 0.0443, Train Acc: 98.69%, Valid Loss: 1.1107, Valid Acc: 84.80%
-Epoch [9/10], Train Loss: 0.0349, Train Acc: 98.97%, Valid Loss: 1.3094, Valid Acc: 84.00%
-Epoch [10/10], Train Loss: 0.0354, Train Acc: 99.21%, Valid Loss: 1.1485, Valid Acc: 83.00%
+- Epoch [1/10], Train Loss: 0.4692, Train Acc: 78.64%, Valid Loss: 0.4257, Valid Acc: 79.20%
+- Epoch [2/10], Train Loss: 0.4256, Train Acc: 81.00%, Valid Loss: 0.3984, Valid Acc: 79.80%
+- Epoch [3/10], Train Loss: 0.3524, Train Acc: 84.92%, Valid Loss: 0.3558, Valid Acc: 84.80%
+- Epoch [4/10], Train Loss: 0.2616, Train Acc: 89.38%, Valid Loss: 0.5081, Valid Acc: 84.20%
+- Epoch [5/10], Train Loss: 0.1557, Train Acc: 94.20%, Valid Loss: 0.5929, Valid Acc: 84.80%
+- Epoch [6/10], Train Loss: 0.0853, Train Acc: 96.90%, Valid Loss: 0.6017, Valid Acc: 83.80%
+- Epoch [7/10], Train Loss: 0.0530, Train Acc: 98.30%, Valid Loss: 0.8172, Valid Acc: 85.40%
+- Epoch [8/10], Train Loss: 0.0443, Train Acc: 98.69%, Valid Loss: 1.1107, Valid Acc: 84.80%
+- Epoch [9/10], Train Loss: 0.0349, Train Acc: 98.97%, Valid Loss: 1.3094, Valid Acc: 84.00%
+- Epoch [10/10], Train Loss: 0.0354, Train Acc: 99.21%, Valid Loss: 1.1485, Valid Acc: 83.00%
 
 After 10 epochs, the model achieved a **train accuracy** of 99.21% and a **validation accuracy** of 83.00%. Despite the high training accuracy, validation performance fluctuated, indicating potential overfitting towards the training data.
 
