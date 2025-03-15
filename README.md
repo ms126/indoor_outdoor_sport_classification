@@ -8,31 +8,25 @@ The dataset consists of images of athletes participating in various sports, cate
 ![image](https://github.com/user-attachments/assets/2073b744-dbce-4729-8d94-5bd25c321a82)
 
 ## Methods Overview:
+### **Methods Overview**:
+
 The project uses a Convolutional Neural Network (CNN) to classify images of athletes participating in various sports into two categories: indoor and outdoor. The following steps outline the method used:
 
-Data Preprocessing:
+1. **Data Preprocessing**:
+   - The dataset consists of images of athletes, organized into training, validation, and test sets. Each set is further divided into two categories: indoor and outdoor.
+   - The images are resized and normalized to ensure consistency in input data and to facilitate efficient training of the model.
+   
+2. **Model Architecture**:
+   - The CNN model consists of three convolutional layers followed by ReLU activations, pooling layers, and two fully connected layers.
+   - The model uses the **ReLU** activation function to introduce non-linearity and the **MaxPool2d** layer to reduce the spatial dimensions of the image after each convolution.
+   - The output of the final fully connected layer is passed through a softmax function for classification into two classes: **Indoor (0)** and **Outdoor (1)**.
 
-The dataset consists of images of athletes, organized into training, validation, and test sets. Each set is further divided into two categories: indoor and outdoor.
+3. **Training**:
+   - The model is trained using **CrossEntropyLoss** as the loss function and **Adam** optimizer for gradient descent optimization.
+   - During each epoch, the model is evaluated on both the training and validation sets to monitor progress. The accuracy and loss are reported after each epoch.
 
-The images are resized and normalized to ensure consistency in input data and to facilitate efficient training of the model.
-
-Model Architecture:
-
-The CNN model consists of three convolutional layers followed by ReLU activations, pooling layers, and two fully connected layers.
-
-The model uses the ReLU activation function to introduce non-linearity and the MaxPool2d layer to reduce the spatial dimensions of the image after each convolution.
-
-The output of the final fully connected layer is passed through a softmax function for classification into two classes: Indoor (0) and Outdoor (1).
-
-Training:
-
-The model is trained using CrossEntropyLoss as the loss function and Adam optimizer for gradient descent optimization.
-
-During each epoch, the model is evaluated on both the training and validation sets to monitor progress. The accuracy and loss are reported after each epoch.
-
-Model Evaluation:
-
-After training, the model is evaluated on a test set that was not seen during training. The final classification accuracy and loss on the test set are reported.
+4. **Model Evaluation**:
+   - After training, the model is evaluated on a test set that was not seen during training. The final classification accuracy and loss on the test set are reported.
 
 ## Results:
 In progress...
