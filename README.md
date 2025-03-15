@@ -44,4 +44,19 @@ After 10 epochs, the model achieved a **train accuracy** of 99.21% and a **valid
 ![image](https://github.com/user-attachments/assets/05897d26-c652-4ba8-a0f0-fb03e335c8d7)
 
 ## Conclusion:
-In progress...
+### **Conclusion**:
+
+The CNN model showed significant improvement in accuracy on the training set, reaching a very high **train accuracy** of 99.21% by the end of the 10th epoch. However, the model experienced a decline in **validation accuracy** after the initial epochs, indicating that while it learned well on the training data, it struggled to generalize effectively to the validation set.
+
+This suggests that the model may be overfitting, as evidenced by the decreasing validation accuracy and increasing validation loss in the later epochs. Overfitting typically occurs when the model learns to memorize the training data rather than generalize to unseen data. The validation accuracy fluctuating while the training accuracy steadily increases is a common symptom of this issue.
+
+Several approaches can be taken to improve the model's performance:
+- **Regularization**: Techniques such as **dropout** or **L2 regularization** could be applied to prevent overfitting and help the model generalize better to new data.
+- **Data Augmentation**: Increasing the size and diversity of the training data by applying transformations like rotation, scaling, and flipping to the images could help the model learn more robust features.
+- **More Epochs with Early Stopping**: Training for more epochs with an early stopping criterion based on the validation loss can help prevent the model from overfitting while still benefiting from longer training periods.
+- **Model Architecture**: Experimenting with deeper architectures, adding more convolutional layers, or using pre-trained models like **ResNet** or **VGG** might help the model perform better on both training and validation datasets.
+- **Hyperparameter Tuning**: Adjusting hyperparameters such as learning rate, batch size, and the optimizer could also improve performance.
+
+The relatively stable validation accuracy during the first few epochs suggests that the model is learning useful features from the images. The validation loss and accuracy fluctuations in the later epochs highlight that additional strategies are necessary to improve the generalization ability of the model.
+
+In summary, while the model demonstrates strong performance on the training data, further tuning and improvements are needed to enhance its generalization to the validation set. Future work will focus on implementing these strategies to optimize the model and achieve better overall performance in classifying indoor and outdoor sports images.
